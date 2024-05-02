@@ -9,7 +9,7 @@ require '../lib/phpmailer/SMTP.php';
   // Replace contact@example.com with your real receiving email address
   const BASE_URL = 'https://jpconstructsolutionusa.com/';
   const NOMBRE_EMPRESA = 'JPCONSTRUCTION,INC.';
-  const CORREO_EMPRESA = 'contact@jpconstructsolutionusa.com';
+  const CORREO_EMPRESA = 'info@jpconstructsolutionusa.com';
   const DOMINIO = 'www.jpconstructsolutionusa.com';
 
 
@@ -22,7 +22,7 @@ require '../lib/phpmailer/SMTP.php';
  
      try { 
          //Recipients
-         $mail->setFrom($_POST['email'], NOMBRE_EMPRESA);
+         $mail->setFrom(CORREO_EMPRESA, NOMBRE_EMPRESA);
          $mail->addAddress(CORREO_EMPRESA);     //Add a recipient
          $mail->CharSet = 'UTF-8';
          //Content
