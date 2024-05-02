@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <meta charset="utf-8">
-    <title>JPCONSTRUCTION,INC. - Construction USA</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta
-        content="construcción, empleo en construcción, albañiles, obreros, ayudantes, plomeros, oportunidades laborales, JPCONSTRUCTION, INC., Construction USA"
-        name="keywords">
-    <meta
-        content="Encuentra oportunidades de empleo en construcción con JPCONSTRUCTION, INC. en USA. Estamos buscando albañiles, obreros, ayudantes, plomeros y más. ¡Únete a nuestro equipo!"
-        name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.png" rel="icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="language" content="spanish">
+        <meta name="copyright" content="JPCONSTRUCTION">
+        <meta name="author" content="JPCONSTRUCTION">
+        <meta name="audience" content="all">
+        <meta name="keywords" content="construcción, empleo en construcción, albañiles, obreros, ayudantes, plomeros, oportunidades laborales, JPCONSTRUCTION, INC., Construction USA">
+        <meta name="robots" content="index,follow">
+        <meta itemprop="telephone" content="+1 (669) 306-8038">
+        <meta itemprop="address" content="701 Decatur Ave N Suite 202 Golden Valley, Minnesota 55427">
+        <meta name="description" content="Encuentra oportunidades de empleo en construcción con JPCONSTRUCTION, INC. en USA. Estamos buscando albañiles, obreros, ayudantes, plomeros y más. ¡Únete a nuestro equipo!">
+        <meta http-equiv="expires" content="43200"/>
+        <title>JPCONSTRUCTION,INC. - Postulaciones</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -34,9 +34,21 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/postulaciones.css">
+    <link rel="stylesheet" href="css/preload.css">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+
+      <!-- Favicons -->
+  <link href="https://jpconstructsolutionusa.com/img/logo-2.png" rel="icon">
+  <link href="https://jpconstructsolutionusa.com/img/logo-2.png" rel="apple-touch-icon">
+  <link rel="icon" type="image/x-icon" href="https://jpconstructsolutionusa.com/img/logo-2.png">
 </head>
 
 <body>
+  <div class="preloader-secund-content">
+    <div class="preloader-secund">
+    <img src="img/load.png" alt="load">
+    </div>
+  </div>
     <div class="wrapper">
         <!-- Top Bar Start -->
         <div class="top-bar">
@@ -93,147 +105,109 @@
         </div>
         <!-- Top Bar End -->
 
-        <!-- Nav Bar Start -->
-        <div class="nav-bar">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                    <a href="#" class="navbar-brand">MENU</a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="#nosotros" class="nav-item nav-link">About</a>
-                            <a href="#servicios" class="nav-item nav-link">Services</a>
-                            <a href="#proyectos" class="nav-item nav-link">Projects</a>
-                            <a href="#testimonios" class="nav-item nav-link">Testimonials</a>
-                            <a href="#contact" class="nav-item nav-link">Contact</a>
-                        </div>
-                        <div class="ml-auto">
-                            <a class="btn" href="#contact">CONTÁCTANOS</a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- Nav Bar End -->
+      
 
         <main>
             <section id="postulaciones">
          
-                <h2 class="subtitulo-contacto">POSTULACIONES JPCONSTRUCTION</h2>
+                <h2 class="subtitulo-contacto">POSTULACIONES <span class="text-magic">JPCONSTRUCTION</span></h2>
       
-               <form action="postulaciones.php" id="postulaciones__form" method="post">
+               <form id="postulaciones__form" >
                   
                 <div class="container">
                     <div class="row g-3">
                     
                             <div class="col-md-6">
-                              <label for="inputEmail4" class="form-label">Correo Electrónico</label>
-                              <input type="email" class="form-control" id="inputEmail4">
+                              <label for="correo" class="form-label">Correo Electrónico</label>
+                              <input type="email" name="correo" id="correo" class="form-control" required>
                             </div>
                             <div class="col-md-6">
-                              <label for="inputPassword4" class="form-label">Teléfono</label>
-                              <input type="password" class="form-control" id="inputPassword4">
+                              <label for="telefono" class="form-label">Teléfono</label>
+                              <input type="number"  class="form-control" name="telefono" id="telefono">
                             </div>
                               
                             <div class="col-md-4">
-                                <label for="inputEmail4" class="form-label">País</label>
-                                <input type="email" class="form-control" id="inputEmail4">
+                                <label for="pais" class="form-label">País</label>
+                                <input type="text" name="pais" class="form-control" id="pais">
                               </div>
                               <div class="col-md-4">
-                                <label for="inputPassword4" class="form-label">Ciudad / Estado</label>
-                                <input type="password" class="form-control" id="inputPassword4">
+                                <label for="ciudad_estado" class="form-label">Ciudad / Estado</label>
+                                <input type="text" class="form-control" id="ciudad_estado" name="ciudad_estado">
                               </div>
 
                               <div class="col-md-4">
-                                <label for="inputPassword4" class="form-label">Lugar</label>
-                                <input type="password" class="form-control" id="inputPassword4">
+                                <label for="lugar" class="form-label">Lugar</label>
+                                <input type="text" class="form-control" name="lugar" id="lugar">
                               </div>
 
                             <div class="col-12">
-                              <label for="inputAddress" class="form-label">Experiencia Laboral</label>
-                              <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+                              <label for="experiencia_laboral" class="form-label">Experiencia Laboral</label>
+                              <textarea class="form-control" id="experiencia_laboral" name="experiencia_laboral" cols="30" rows="5"></textarea>
                             </div>
 
                             <div class="col-12">
-                                <label for="inputAddress" class="form-label">¿Porque te dariamos la oportunidad laboral en JPConstruction?</label>
-                                <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+                                <label for="porque_trabajar_jpconstruction" class="form-label">¿Porque crees que nosotros debamos tenerte en nuestro equipo de trabajo?</label>
+                                <textarea class="form-control" name="porque_trabajar_jpconstruction" id="porque_trabajar_jpconstruction" cols="30" rows="5"></textarea>
                               </div>
 
                             <div class="col-2">
-                              <label for="inputAddress2" class="form-label">Edad</label>
-                              <input type="number" min="18" id="edad" class="form-control"  placeholder="+18">
+                              <label for="edad" class="form-label">Edad</label>
+                              <input type="number" min="18" id="edad" name="edad" class="form-control"  placeholder="+18">
+                            </div>
+
+                            <div class="col-md-4">
+                              <label for="personas_dependen" class="form-label">¿Cuantas personas dependen de ti?</label>
+                              <input type="number" name="personas_dependen" id="personas_dependen" min="0" class="form-control"  placeholder="+1">
                             </div>
                         
-                            <div class="col-md-3">
-                              <label for="inputState" class="form-label">¿Tienes Hijos?</label>
-                              <select name="hijos" class="form-select">
+                            <div class="col-md-6">
+                              <label for="hijos" class="form-label">¿Tienes Hijos?</label>
+                              <select name="hijos" id="hijos" class="form-control">
                                 <option selected value="">-- Seleccione --</option>
                                 <option value="si">Si</option>
                                 <option value="no">No</option>
                               </select>
                             </div>
 
-                            <div class="col-md-4">
-                                <label for="inputState" class="form-label">¿Cuantas personas dependen de ti?</label>
-                                <input type="number" min="0" class="form-control"  placeholder="+1">
-                              </div>
+                           
 
-                            <div class="col-md-3">
-                              <label for="inputZip" class="form-label"></label>
-                              <input class="form-check-input" type="checkbox" id="gridCheck">
-                              <label class="form-check-label" for="gridCheck">
-                                ¿Si la empresa exigiera una Garantia en calidad de reembolso aceptarias?
-                              </label>
+                            <div class="col-md-12">
+                               <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="garantia_calidad_reembolso" id="garantia_calidad_reembolso">
+                                <label class="form-check-label" for="garantia_calidad_reembolso">
+                                  ¿Si la empresa exigiera una Garantia en calidad de reembolso aceptarias?
+                                </label>
+                               </div>
                             </div>
 
-                            <div class="col-md-4">
-                                <label for="inputState" class="form-label">¿Trabajó en otra empresa parecida, cuando y donde?</label>
-                                <input type="text" min="0" class="form-control"  placeholder="">
-                              </div>
 
-                            
-                              <div class="modal" tabindex="-1">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title">Autorización</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <p>Certicíco que toda la infomación que ha provisto en solicitor y obtener empleo con el empleador es verdadera, completa y correcta, y quedo enterado que cualquier infomación en al solicitud falsa, imcompleta o falsificada en cualquier respecta, de mi parte, sera suficiente causa de conelación de al misma o de mi despedida inmediata de los oficios al empleador, al ser descubierta. Si empleado, concuerdo en comformarma a las reglas y regulaciones de la compañia, y entiendo que estas reglas y/o el manual de empleado no forman n contratro del empleo, expreso o implicado, y concuerdo que mi empleo y la compensación pueden ser terminados, con o sin causa y con o sin el aviso, en cualquier momento, de mi parte o la opción de la compañia. También entiendo y concuerdo que las condiciones de mi empleo gueden ser combiadas, con o sin causa y con o sin el aviso, en cualquier momento por la compañia. Entiendo que ningún representante de la compañia, de otra manera que el presidente, y entonces solo cuando en la escritura y firmado por el presidente, tiene al autoridad para entrar en cualquir acuerdo para el empleo para cualquier tiempo especifico, o para hacer caulquier acuedro al contrario. Le doy derecho expresamente, sin reservas, al empleador, sus reresentantes, empleados of agentes que investiguen todas las referencias (personales y profesionales), poniéndose en contacto con mis empleadores, agencias públicas, autoridades de licencias e institucions educativas y de orta forms verifiquen al exactitude de la información contedida en esta solicitud, resumen o entrevista de empleo. Por medio de lo presente, dejo libre de reponsabilidad al empleador, a sus representantes en el procurer, recoger, y usar tal información en el proceso de empleo así como a todas las ortas personas, empresas, e organizaciones que otorguen dicha información. Entiendo que estan solicitude s válida solamente por uno año y active por 30 dias. Si al concluir este período, el empleador no se ha counicado conmigo y aún estoy interesado en el empleo, sera necesario llenar una nueva solicitud. También, entiendo que si consigo empleo, tender que proveer preba de indentificación y autorización legal para trabajar en los Estados Unidos y que las leyes federales de inmigración requieren. Esta compañia no tolera la discriminacion o el acoso illegal basado en genero, raza, color, religion, organ nacional, ciudadania, edad, incapacidad, o ninguen otro estado protegido bajo las leyes federales, estado o locales. Ninguan prgunta en esta aplicación es utilizada para limitar o excuir un aplicante de la consideración de empleo en cualquier forma prohibada por las leyes applicable federales, estado o local.</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                      <button type="button" class="btn btn-primary">Aceptar</button>
-                                    </div>
-                                  </div>
+                            <h3 class="text-center pt-5">¿Aceptas la Autorización?</h3>
+                            <p>Certicíco que toda la infomación que ha previsto en solicitar y obtener empleo con el empleador es verdadera, completa y correcta, y quedo enterado que cualquier infomación en la solicitud falsa, imcompleta o falsificada en cualquier respecta, de mi parte, sera suficiente causa de cancelación de la misma o de mi despedida inmediata de los oficios al empleador, al ser descubierta. <br>
+                              Si el empleado, concuerda comformarme a las reglas y regulaciones de la compañia, y entiendo que estas reglas y/o el manual de empleado no forman n contratro del empleo, expreso o implicado, y concuerdo que mi empleo y la compensación pueden ser terminados, con o sin causa y con o sin el aviso, en cualquier momento, de mi parte o la opción de la compañia.
+                              <br><br>
+                              También entiendo y concuerdo que las condiciones de mi empleo gueden ser combiadas, con o sin causa y con o sin el aviso, en cualquier momento por la compañia. Entiendo que ningún representante de la compañia, de otra manera que el presidente, y entonces solo cuando en la escritura y firmado por el presidente, tiene la autoridad para entrar en cualquir acuerdo para el empleo para cualquier tiempo especifico, o para hacer caulquier acuedro al contrario. <br><br> Le doy derecho expresamente, sin reservas, al empleador, empleados of agentes que investiguen todas las referencias <b>(personales y profesionales)</b>, poniéndose en contacto con mis empleadores, agencias públicas, autoridades de licencias e institucions educativas y de orta forms verifiquen al exactitude de la información contedida en esta solicitud, resumen o entrevista de empleo. Por medio de lo presente, dejo libre de reponsabilidad al empleador, a sus representantes en el procurer, recoger, y usar tal información en el proceso de empleo así como a todas las ortas personas, empresas, e organizaciones que otorguen dicha información. Entiendo que estan solicitude s válida solamente por uno año y active por 30 dias. Si al concluir este período, el empleador no se ha comunicado conmigo y aún estoy interesado en el empleo, sera necesario llenar una nueva solicitud. También, entiendo que si consigo empleo, tender que proveer prueba de indentificación y autorización legal para trabajar en los <b>Estados Unidos</b> y que las leyes federales de inmigración requieren. Esta compañia no tolera la discriminación o el acoso ilegal basado en genero, raza, color, religión, org nacional, ciudadania, edad, incapacidad, o ninguen otro estado protegido bajo las leyes federales, estado o locales. Ninguna pregunta en esta aplicación es utilizada para limitar o excluir un aplicante de la consideración de empleo en cualquier forma prohibada por las leyes aplicables federales, estado o local.</p>
+                              <div class="col-12">
+                                <div class="form-check text-center">
+                                  <input class="form-check-input" type="checkbox" name="autorizacion" id="autorizacion" required>
+                                  <label class="form-check-label" style="color:rgb(18, 137, 18);" for="autorizacion">
+                                    Aceptar
+                                  </label>
                                 </div>
                               </div>
-
-                            <div class="col-12">
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                  Check me out
-                                </label>
-                              </div>
-                            </div>
-
                             <div class="col-6">
-                                <label for="" class="form-label">Nombres</label>
-                              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                            </div>
-                            <div class="col-6">
-                                <label for="" class="form-label">Apellidos</label>
-                              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                            </div>
+                              <label for="nombres" class="form-label">Nombres</label>
+                            <input type="text" id="nombres" name="nombres" class="form-control" required placeholder="First name" aria-label="First name">
+                          </div>
+                          <div class="col-6">
+                              <label for="apellidos" class="form-label">Apellidos</label>
+                            <input type="text" id="apellidos" name="apellidos" class="form-control" required placeholder="Last name" aria-label="Last name">
+                          </div>
 
-                            <div class="col-12">
-                              <button type="submit" class="btn btn-primary">Enviar Formulario</button>
+                         
+                          
+
+                            <div class="col-12 text-center">
+                              <button type="submit" class="btn btn-primary btn-form">Enviar Formulario</button>
                             </div>
                         </div>
                     
@@ -251,11 +225,10 @@
                     <div class="col-md-4 col-lg-4">
                         <div class="footer-contact">
                             <h2>Contacto de la oficina</h2>
-                            <p><i class="fa fa-map-marker-alt"></i>14721 Industry Ct, Woodbridge, VA 22191, EE. UU.
-                                Washington</p>
+                            <p><i class="fa fa-map-marker-alt"></i>701 Decatur Ave N Suite 202 Golden Valley, Minnesota 55427</p>
                             <p><i class="fa fa-phone-alt"></i>+1 (669) 306-8038</p>
                             <p><i class="fa fa-envelope"></i><a style="color:#fff;"
-                                    href="mailto:contact@jpconstructsolutionusa.com">contact@jpconstructsolutionusa.com</a>
+                                    href="mailto:info@jpconstructsolutionusa.com">info@jpconstructsolutionusa.com</a>
                             </p>
                             <!-- <div class="footer-social">
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -266,32 +239,27 @@
                     <div class="col-md-4 col-lg-4">
                         <div class="footer-link">
                             <h2>¿Quieres un Servicio?</h2>
-                            <a href="#contact">Construcción de edificio</a>
-                            <a href="#contact">Renovación de Casas</a>
-                            <a href="#contact">Diseño arquitectónico</a>
-                            <a href="#contact">Diseño Interior</a>
+                            <a href="index.html/#contact">Construcción de edificio</a>
+                            <a href="index.html/#contact">Renovación de Casas</a>
+                            <a href="index.html/#contact">Diseño arquitectónico</a>
+                            <a href="index.html/#contact">Diseño Interior</a>
                         </div>
                     </div>
                     <div class="col-md-4 col-lg-4">
                         <div class="footer-link">
                             <h2>Enlaces</h2>
                             <a href="index.html">Home</a>
-                            <a href="#nosotros">About</a>
-                            <a href="#servicios">Service</a>
-                            <a href="#proyectos">Project</a>
-                            <a href="#testimonios">Testimonial</a>
-                            <a href="#contact">Contact</a>
+                            <a href="index.html/#nosotros">About</a>
+                            <a href="index.html/#servicios">Service</a>
+                            <a href="index.html/#proyectos">Project</a>
+                            <a href="index.html/#testimonios">Testimonial</a>
+                            <a href="index.html/#contact">Contact</a>
                         </div>
                     </div>
 
                 </div>
             </div>
-            <!-- <div class="container footer-menu">
-                    <div class="f-menu">
-                        <a href="politicas-privacidad.html">Políticas de privacidad</a>
-                        <a href="#faqs">Preguntas Frecuentes</a>
-                    </div>
-                </div> -->
+       
             <div class="container copyright">
                 <div class="row">
                     <div class="col-md-12">
@@ -321,18 +289,11 @@
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
+    <script src="js/sweetalert.min.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/postulaciones.js"></script>
 
-    <script>
-var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
-myModal.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
-})
-    </script>
 </body>
 
 </html>
